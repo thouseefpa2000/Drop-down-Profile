@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-down Profile Menu </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo" alt="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Feature</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <img src="images/user.png" class="user-pic" onclick="toggleMenu()" alt="user-pic">
+
+
+
+        <div class="sub-manu-wrap" id="subMenu">
+            <div class="sub-manu">
+                <div class="user-info">
+                    <img src="images/user.png" alt="">
+                    <h3>thouseef</h3>
+                </div>
+                <hr>
+
+                <a href="" class="sub-menu-link">
+                    <img src="images/profile.png" alt="">
+                    <p>Edit profile</p>
+                    <span>></span>
+                </a>
+
+                <a href="" class="sub-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings</p>
+                    <span>></span>
+                </a>
+
+                <a href="" class="sub-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help</p>
+                    <span>></span>
+                </a>
+                <a href="" class="sub-menu-link">
+                    <img src="images/profile.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+</html>
